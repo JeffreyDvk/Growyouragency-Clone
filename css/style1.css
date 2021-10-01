@@ -1,0 +1,88 @@
+body{
+    background-image: none;
+}
+#presentation{
+    position: relative;
+    padding:150px 10% 90px 10%;
+    text-align: center;
+}
+#presentation h1{
+    font-size: 55px;
+}
+#presentation img{
+    width: 300px;
+    border-radius: 25px;
+}
+#intro , #corps-div{
+    position: relative;
+    width: 50%;
+    margin: 0px auto;
+}
+main{
+    padding-bottom: 100px;
+}
+main div p{
+    padding: 5px 0px;
+}
+#corps-div{
+    line-height: 1.8;
+}
+#corps-div img{
+    width: 100%;
+    border-radius: 30px;
+    text-align: center;
+    margin: 75px 0px;
+}
+#corps-div h2{
+    margin-top: 75px;
+    margin-bottom: 40px;
+}
+#bubble1::before{
+    content:"";
+    padding: 46px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: rgba(131,222,247,0.5);
+    top: 600px;
+    left: -53%;
+}
+#bubble1::after{
+    content:"";
+    padding: 30px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: rgba(131,222,247,0.6);
+    top: 500px;
+    right : -50%;
+}
+#bubble2::before{
+    content:"";
+    padding: 46px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: rgba(131,222,247,0.5);
+    top: 1600px;
+    left: -40%;
+}
+#bubble3::after{
+    content:"";
+    padding: 70px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: rgba(131,222,247,0.2);
+    right: -50%;
+
+}
+#bubble4::before{
+    content:"";
+    padding: 95px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: rgba(131,222,247,0.5);
+    left: -53%;
+}
+@media screen and (max-width : 880px){
+    #intro , #corps-div{
+        width: 90%;
+    }
+}

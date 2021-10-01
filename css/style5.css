@@ -1,0 +1,269 @@
+@font-face{
+    font-family: "RobotoB";
+    src: url("../fonts/Roboto-Black.ttf");
+}
+@font-face{
+    font-family: "RobotoT";
+    src: url("../fonts/Roboto-Thin.ttf");
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: "RobotoB",sans-serif; 
+}
+p{
+    font-family: "RobotoT",sans-serif; 
+}
+body{
+
+    background: url("../img/back/background-large.png"),linear-gradient(to bottom,rgba(185,235,249,0.3),rgba(198,235,249,0.1),rgba(255,255,255,1),rgba(255,255,255,1));
+    background-size: 60%,100%;
+    background-position: top right,center;
+    background-repeat: no-repeat;
+    font-family: sans-serif;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+#logo img{
+    width: 200px;
+    margin-top: 40px;
+    margin-left: 10%;
+}
+#snd-div{
+    width: 90%;
+    margin-top: 100px;
+    margin-left: 10%;
+    margin-bottom: 150px;
+}
+#snd-div div img{
+    width : 400px;
+
+}
+#snd-div div h1{
+    background: linear-gradient(to bottom,rgba(182,25,250,1),rgba(118,13,217,1));
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    letter-spacing: -1px;
+    margin-bottom: 70px;
+}
+#free{
+    margin-left: 0%;
+    padding: 25px 80px;
+    border: none;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 100px;
+    background-image: url("../icons/button_overlay.png"),linear-gradient(right, #205ed0 0%, #00ccfe 100%);
+    background-image: url("../icons/button_overlay.png"),-webkit-linear-gradient(right, #205ed0 0%, #00ccfe 100%);
+    background-image: url("../icons/button_overlay.png"),-o-linear-gradient(right, #205ed0 0%, #00ccfe 100%);
+    background-image: url("../icons/button_overlay.png"),-moz-linear-gradient(right, #205ed0 0%, #00ccfe 100%);
+    background-size: 100% 100%,100% 100%;
+}
+#free img{
+    padding-right: 50px;
+}
+#how-to{
+    width: 100%;
+    background-image: url("../img/Background_Training_Content.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+#how-to h1{
+    padding: 75px;
+    color: white;
+}
+#how-to div{
+    display: inline-block;
+    width: 25%;
+    height: 250px;
+    border-radius: 35px;
+    padding: 40px 20px;
+    margin: 0px 1.5%;
+    margin-bottom: 100px;
+    background-color: white;
+    text-align: center;
+    box-shadow: 0px 10px 55px rgba(0,0,0,0.4);
+}
+#how-to div img{
+    width: 75px;
+}
+#how-to div h2{
+    color: transparent;
+    background : linear-gradient(to right,rgba(109,33,233,1),rgba(33,48,233,1));
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+#how-to div p{
+    font-size: 20px;
+    font-weight: 200;
+}
+#mission{
+    width: 100%;
+}
+#mission div{
+    display: block;
+}
+#first{
+    width: 40%;
+    float: left;
+    padding: 75px 0px 0px 125px;
+}
+#first p{
+    font-size: 17px;
+}
+#first h1{
+    font-size: 60px;
+    color: transparent;
+    background : linear-gradient(to right,rgba(109,33,233,1),rgba(33,215,233,1));
+    background-clip : text;
+    -webkit-background-clip : text;
+    padding: 0px;
+    margin: 0px;
+}
+#st{
+    padding: 0px;
+    margin-top: -1px;
+    font-weight: 500;
+}
+#sd{
+    font-weight: 200;
+}
+#first h2{
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+#snd{
+    position: relative;
+    float: right;
+    width: 450px;
+    top: -75px;
+    right: 200px;
+    
+}
+#snd img{
+    width: 100%;
+}
+#students{
+    margin-top: 600px;
+    background-image: url("../img/back/testimonials_bg.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-align: center;
+    padding: 100px 10px;
+    color: white;
+}
+#students-div div {
+    width: 20%;
+    display: inline-block;
+    background-color: white;
+    color: black;
+    padding: 0px 40px 20px 40px;
+    border-radius: 25px;
+    margin: 75px 1.5%;
+    box-shadow: 0px 0px 50px rgba(0,0,0,0.2);
+}
+#students-div div img{
+    width: 100px;
+    margin-top: -35px;
+    border-radius: 50%;
+}
+#students-div div p{
+    font-size: 20px;
+    font-weight: 200;
+}
+#last-div{
+    text-align: center;
+    background-image: url("../img/back/Foooter-Scene-GYA.png");
+    background-position: bottom;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 800px;
+}
+#img-img{
+    width: 700px;
+}
+#last-div h1{
+    background: linear-gradient(to bottom,rgba(182,25,250,1),rgba(118,13,217,1));
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    font-size: 45px;
+    letter-spacing: -4px;
+    padding-bottom: 10px;
+}
+footer{
+    padding: 75px 125px 50px 125px;
+    background-color: rgba(0,0,50,1);
+    font-size: 10px;
+    color: rgba(255,255,255,0.6);
+}
+#footer{
+    display: table;
+}
+#foot1{
+    display: table-cell;
+    width : 30%;
+    text-align: center;
+}
+#foot1 a{
+   color: rgba(255,255,255,0.6);
+   text-decoration: none;
+}
+#foot1 a:hover{
+    text-decoration: underline;
+}
+#foot2{
+    display: table-cell;
+    text-align : center;
+    padding-left: 50px;
+}
+@media screen and ( max-width: 770px ){
+    footer{
+        padding-left: 10px;
+        padding-right: 10px;
+        margin: 0px;
+    }
+    #footer{
+        display: table;
+    }
+    #foot1 , #foot2{
+        display: block;
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+    }
+    body{
+        background-size: 90%;
+    }
+    #how-to div{
+        width: 80%;
+    }
+    #first{
+        width: 80%;
+        padding: 5%;
+        margin: 0px;
+        float: none;
+    }
+    #snd{
+        width: 200px;
+        top : 50px;
+        right : 50%;
+    }
+    #students{
+        color: black;
+        margin-top: 330px;
+    }
+    #students-div div{
+        width: 80%;
+    }
+    #img-img{
+        width: 80%;
+    }
+    #free{
+        padding: 20px 20px;
+        font-size: 15px;
+    }
+
+}

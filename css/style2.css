@@ -1,0 +1,58 @@
+body{
+	background-image : none;
+}
+#title-div{
+	margin-left: 8%;
+	margin-top: 180px;
+}
+#title-div h1{
+	font-size: 55px;
+	line-height: 1;
+}
+#envision-div{
+	margin-top: 200px;
+	margin-left: 10vw;
+}
+#envision-div div{
+	width: 680px;
+	line-height: 1.8;
+}
+#envision-div div div{
+	border-left: 1px solid #83def7;
+	padding-left: 70px;
+}
+#envision-div div h3{
+	margin: 50px 0px;
+	padding-left: 70px;
+}
+#envision-div div p{
+	padding: 5px 0px;
+}
+#value-div h3::before,#approch-div h3::before,#vision-div h3::before{
+	color: #83def7;
+	padding: 15px;
+	font-weight : 500;
+	border : 3px solid #83def7;
+	border-radius: 50%;
+	margin-left: -100px;
+	margin-right: 40px;
+}
+#value-div h3::before{
+	content: "01";
+}
+#approch-div h3::before{
+	content: "02";
+}
+#vision-div h3::before{
+	content: "03";
+}
+@media screen and (max-width : 1200px){
+	#envision-div{
+		margin-left: 50px;
+	}
+}
+@media screen and (max-width : 825px){
+	#envision-div div{
+		width: inherit;
+	}
+}

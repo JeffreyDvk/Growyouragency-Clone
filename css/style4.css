@@ -1,0 +1,76 @@
+body{
+    background: none;
+}
+#title-div{
+    position: relative;
+    top: 50px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+#title-div h1{
+    font-size: 45px;
+}
+#title-div div a{
+    color: black;
+    font-weight : 500;
+    text-decoration: none;
+    font-size: 15px;
+    margin-left: 20px;
+}
+#title-div div p{
+    position: relative;
+    top: -15px;
+   float: right;
+}
+#videos-div{
+    width: 100%;
+    margin-top: 75px;
+    text-align : center;
+}
+#videos-div div{
+    background-color: red;
+    display: inline-block;
+    color: white;
+    width: 25%;
+    height: 350px;
+    margin: 50px 25px 0px 25px;
+    text-align: left;
+    border-radius : 30px;
+    background-image : url("../img/profil/Screen-Shot-2020-05-08-at-13.44.10.png");
+    background-size : 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition-duration: 0.5s;
+}
+#videos-div div h1{
+    margin-top: 100px;
+    margin-left: 20px;
+    vertical-align: middle;
+}
+#play{
+    margin-top: 60px;
+    margin-left: 30px;
+    border: 2px solid white;
+    border-radius: 50%;
+    padding: 15px;
+    float: bottom;
+}
+#videos-div a:hover div{
+    background-size : 125% 125%;
+}
+#videos-div a div span img{
+    width: 15px;
+}
+#location{
+    float: right;
+    margin-top: 75px;
+    margin-right: 30px;
+}
+@media screen and ( max-width: 1080px ) {
+    #videos-div div{
+        width: 90%;
+        margin:0px;
+        margin: 50px 5% 0px 5%
+
+    }
+}

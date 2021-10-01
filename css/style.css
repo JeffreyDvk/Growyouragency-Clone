@@ -1,0 +1,632 @@
+
+body{
+    margin: 0px;
+    padding: 0px;
+    color: rgba(000,000,000,0.8);
+    font-family: sans-serif;
+    background: url("../img/back/background-large.png");
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: 70%;
+}
+
+/* Header */
+nav{
+    display: flex;
+    margin-top: 50px;
+    margin-left: 0px;
+    padding-left: 8%;
+    font-size: 15px;
+}
+#link-div{
+    display: table;
+    margin-left: 20px;
+    padding: 15px 0px 10px 20px;
+    border-left: 1px solid rgba(000,000,000,0.1);
+}
+.nav-item{
+    display: table-cell;
+    padding: 0px 20px;
+}
+.nav-link{
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.animate-span{
+    background-color: #60dbdb;
+    height: -10px;
+    border-radius: 2px;
+    padding: 0px;
+    transition-duration: 0.25s;
+}
+.nav-item:hover .animate-span{
+    padding-right: 30px;
+}
+#main-title-div{
+    margin-top: 140px;
+    margin-left: 8%;
+}
+#main-title{
+    display: flex;
+    font-size : 65px;
+    line-height: 30px;
+    transform: scaleY(0.9);
+}
+#your{
+    margin-left: -70px;
+}
+#grow{
+    color: rgba(000,000,000,0.0);
+    animation-name: changegrow;
+    margin-top: -30px; 
+    animation-duration: 4s;
+    animation-delay: 0s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+#start{
+    animation-name: changestart;
+    animation-duration: 4s;
+    animation-delay: 0s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes changestart {
+    0% { color: rgba(000,000,000,0.0); }
+    10% { color: rgba(000,000,000,0.9);font-size: 65px; }
+    15% { font-size: 75px ;}
+    20% { font-size: 60px; }
+    25% { font-size: 70px; }
+    30% { font-size: 61px; }
+    35% { font-size: 68px; }
+    40% { font-size: 65px; }
+    50% { color: rgba(000,000,000,0.0); }
+    60% { color: rgba(000,000,000,0.0); }
+    70% { color: rgba(000,000,000,0.0); }
+    80% { color: rgba(000,000,000,0.0); }
+    90% { color: rgba(000,000,000,0.0); }
+    100% { color: rgba(000,000,000,0.0); }
+}
+@keyframes changegrow {
+    0% { color: rgba(000,000,000,0.0); }
+    10% { color: rgba(000,000,000,0.0); }
+    20% { color: rgba(000,000,000,0.0); }
+    30% { color: rgba(000,000,000,0.0); }
+    40% { color: rgba(000,000,000,0.0); }
+    50% { color: rgba(000,000,000,0.0); }
+    60% { color: rgba(000,000,000,0.9);font-size: 65px; }
+    65% { font-size: 75px ;}
+    70% { font-size: 60px; }
+    75% { font-size: 70px; }
+    80% { font-size: 61px; }
+    85% { font-size: 68px; }
+    90% { font-size: 65px; }
+}
+#free{
+    width: 270px;
+    margin-top: 8%;
+    margin-bottom: 8%;
+    margin-left: 8%;
+    transition-duration: 0.5s; 
+}
+#free:hover{
+    margin-top: 7%;
+    margin-bottom: 9%;
+}
+#fr-training{
+    margin-bottom: -40px;
+    padding: 15px 60px;
+    border: none;
+    text-decoration: none;
+    color: white;
+    border-radius: 100px;
+    background-image: url("../icons/button_overlay.png"),linear-gradient(right, #205ed0 0%, #00ccfe 100%);
+    background-image: url("../icons/button_overlay.png"),-webkit-linear-gradient(right, #205ed0 0%, #00ccfe 100%);
+    background-image: url("../icons/button_overlay.png"),-o-linear-gradient(right, #205ed0 0%, #00ccfe 100%);
+    background-image: url("../icons/button_overlay.png"),-moz-linear-gradient(right, #205ed0 0%, #00ccfe 100%);
+    background-size: 100%;
+    box-shadow: 0px 0px 80px #96afe1;
+    transition-duration: 0.5s;
+}
+#train-icon{
+    padding-right:  30px;
+}
+/* Main */
+#first-main-div{
+    position: relative;
+    top : 60px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+#caroussel-div{
+    position: relative;
+    top : 100px; 
+    display: table;
+    width: 100%;
+    height: 500px;
+}
+#arrow-div{
+    display: table-cell;
+    width: 30%;
+}
+#arrow-div div{
+    margin-right: 75px;
+    margin-left: 40%; 
+}
+#arrow-left::before{
+    content: "";
+    position: relative;
+    padding: 25px;
+    background-image: url("../icons/arrow_left_buble.png");
+    background-repeat: no-repeat;
+    background-size: 50px;
+    left: 25px;
+    z-index: -1;
+}
+#arrow-left{
+    float: right;
+    position: relative;
+    top : 100px;
+    transition-duration: 0.25s;
+    z-index: 1;
+}
+#arrow-right{
+    float: left;
+    position: relative;
+    top : 140px;
+    transition-duration: 0.25s;
+    z-index: 1;
+}
+#arrow-right::after{
+    content: "";
+    position: relative;
+    border-radius: 100%;
+    padding: 15px 25px;
+    background-color: rgba(80,153,246,0.8);
+    left: -25px;
+    bottom: 7px;
+    z-index: -1;
+}
+#arrow-left img,#arrow-right img{
+    width: 35px;
+}
+#arrow-left:hover{
+    top : 105px;
+}
+#arrow-right:hover{
+    top : 145px;
+}
+#profiles-div{
+    display: table-cell;
+    width: 70%;
+    position: relative;
+    overflow: hidden;
+    top: 90px;
+    background-color: rgba(200,200,200,0.2);
+}
+.profile{
+    display: inline-table;
+    padding-left: 80px;
+    width: 300px;
+}
+.identity{
+    margin-bottom: 30px;
+    color: white;
+}
+.identity span{
+    position: relative;
+    bottom: 25px;
+    font-weight: 500;
+}
+.profile-img{
+    border-radius: 50%;
+    padding-right: 30px;
+    width: 75px;
+    height: 75px;
+}
+.about-profile-div{
+    border-radius: 15px;
+    background-color: white;
+    color : black;
+    padding: 50px 50px 0px 50px;
+    height: 270px;
+    box-shadow: 0px 0px 50px rgba(000,000,000,0.3);
+}
+.fish{
+    position: relative;
+    width: 50px;
+    top: 0px;
+    float: right;
+}
+
+/* Info */
+
+#info-about{
+    position: relative;
+    top: 405px;
+}
+#mission-info , #agency-info , #eagle-info{
+    display: table;
+    width: 100%;
+}
+#div-div1{
+    display: table-cell;
+    width: 65%;
+    background-image : url("../img/back/University02.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom left;
+}
+#div-div2{
+    display: table-cell;
+    position: relative;
+    padding-bottom: 200px;
+    right: 200px;
+}
+#div-div2 h1,#mid-div2 h1,#bot-div2 h1{
+    font-size: 50px;
+}
+.detail{
+    font-size : 16px;
+    font-weight: normal;
+}
+#agency-info{
+    margin-top: 100px; 
+}
+#mid-div2{
+    display: table-cell;
+    width: 40%;
+    position: relative;
+    padding-right : 10%;
+    padding-bottom: 150px;
+    left: 100px;
+}
+#mid-div1{
+    display: table-cell;
+    width: 50%;
+    background-image : url("../img/Agency-Life-GYA.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom left;
+}
+#bot-div1{
+    display: table-cell;
+    width: 65%;
+    background-image : url("../img/Falcon.jpg");
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center left;
+}
+#bot-div2{
+    display: table-cell;
+    position: relative;
+    padding-bottom: 200px;
+    right: 200px;
+}
+.info-eagle::before{
+    content: "";
+    position: relative;
+    top: 60px;
+    right: 50px;
+    padding: 25px;
+    background-image: url("../icons/check_icon.png");
+    background-size: 25px;
+    background-repeat: no-repeat;
+}
+.info-eagle{
+    list-style-type: none;
+}
+
+/* recap */
+#recap{
+    display: table;
+    background-image: url("../img/back/stats_bubbles.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-top: 200px;
+    padding: 300px 0px;
+    width: 100%
+}
+#recap-div1,#recap-div2,#recap-div3{
+    display: table-cell;
+    width: 30%;
+    text-align: center;
+    color : white;
+}
+#recap-div1 h1,#recap-div2 h1,#recap-div3 h1{
+    font-size: 60px;
+}
+#recap-div1 p,#recap-div2 p,#recap-div3 p{
+    font-size : 15px;
+    font-weight: bold;
+}
+#recap-div1 img,#recap-div2 img,#recap-div3 img{
+    width: 40px;
+}
+
+/* info-system */
+#desc-fish h1{
+    font-size: 50px;
+}
+#desc-fish{
+    text-align: center;
+}
+#desc-fish p{
+    margin-top : 25px;
+}
+#fish-div1,#fish-div2,#fish-div3{
+    display: table;
+}
+#fish-div1{
+    margin-top: 50px;
+}
+.fish-presentation,.fish-description{
+    display: table-cell;
+    width: 50%;
+}
+.fish-presentation{
+    padding-right: 5%;
+     border-right: 1px solid rgba(0,0,0,0.1); 
+}
+.fish-presentation div{
+    float: right;
+}
+.fish-span{
+    width: 100%;
+    padding: 3px 0px;
+    border-radius: 10px;
+    background-color: #60dbdb;
+}
+.fish-presentation div img{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.fish-presentation div p{
+    float: right;
+    font-weight: bold;
+}
+.fish-description{
+   
+}
+.fish-description{
+    position: relative;
+    top: -150px;
+    padding:0px 8%;
+}
+#get-div{
+    margin-top : 100px;
+    height: 60vw;
+    background-image: url("../img/back/Foooter-Scene-GYA.png");
+    background-size: 100%; 
+    background-repeat: no-repeat;
+    background-position: bottom;  
+    text-align: center;
+    margin-bottom: -20px;
+}
+#frees{
+    width: 270px;
+    margin-top: 8%;
+    margin-bottom: 8%;
+    margin-left: 40%;
+    transition-duration: 0.25s; 
+}
+#frees:hover{
+    margin-top: 7%;
+    margin-bottom: 9%;
+}
+footer{
+    width: 90%;
+    padding: 50px 5%;
+    position: relative;
+    bottom: 0px;
+    background-color: rgb(3,20,40);
+    color: white;
+}
+#first-div{
+    padding-bottom: 20px;
+    border-bottom : 1px solid rgba(255,255,255,0.3);
+}
+#first-div p img{
+    width: 200px;
+}
+#first-div ul li{
+    font-size: 12px;
+    font-weight: bold;
+    margin-right: 20px;
+    display: inline;
+    list-style-type: none;
+}
+#first-div ul li a{
+    color: white;
+    text-decoration: none;
+    transition-duration: 0.25s;
+}
+#first-div ul li a:hover{
+    color: #60dbdb;
+    text-decoration: underline;
+}
+#snd-div{
+    display: table;
+}
+#snd-div div{
+    display: table-cell;
+}
+#div1,#div-img{
+    width: 30%;
+}
+#div2{
+    width: 100%;
+    text-align: center;
+}
+#snd-div div p{
+    font-size: 12px;
+}
+#div-img img{
+    float: right;
+    padding:50px 50px 0px 0px;
+}
+#snd-div div ul li{
+    display: inline;
+    list-style-type: none;
+    padding: 0px 10px;
+}
+.bar{
+    border-left: 1px solid rgba(255,255,255,0.4);
+}
+#snd-div div ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+}
+@media screen and (max-width: 970px){
+    #link-div{
+        display: none;
+    }
+    body{
+        background-image: url("../img/back/background-thin.png");
+        background-position: 100% 2%;
+    }
+    #arrow-div{
+        display: none;
+    }
+    #info-about div{
+        display: block;
+        width: 80%;
+        margin: 0px auto;
+        
+    }
+    #div-div1,#mid-div1,#bot-div1{
+        width: 100%;
+        height : 350px;
+        background-size: 80%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    #div-div2 h1,#div-div2 h6,#mid-div2 h1,#mid-div2 h6,#bot-div2 h1,#bot-div2 h6{
+        text-align: center;
+    }
+    #div-div2,#mid-div2,#bot-div2{
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+        top: 0px;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+    }
+    #info-about div div{
+        display: block;
+        width: 100%;
+    }
+    #mid-div1{
+        position: relative;
+        top: -300px
+    }
+    #mid-div2{
+        position: relative;
+        top: 350px
+    }
+    #recap{
+        margin-top: 400px;
+        padding: 150px 0px;
+    }
+    #frees{
+        margin-left: 35%;
+    }
+    .fish-presentation ,.fish-presentation *{
+        float: none;
+        display: block;
+        margin: 0px;
+        top: 0px;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        padding: 0px;
+        width: 100%;
+        border: none;
+        text-align: center;
+    }
+    .fish-description,.fish-description *{
+        float: none;
+        display: block;
+        margin: 0px;
+        top: 0px;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        padding: 0px;
+        width: 100%;
+        border: none;
+        text-align: center;
+    }
+    .fish-description{
+        width: 60%;
+        margin: 0px auto;
+    }
+    .fish-span{
+    width: 25%;
+    margin-bottom: 25px;
+    margin-right: 38%; 
+    padding: 3px 0px;
+    }
+    .fish-img{
+        margin: 0px auto;
+    }
+    #info-system div{
+        margin-top: 25px;
+    }
+}
+@media screen and (max-width: 880px){
+   body{
+    background-position: 110% 2%;
+    background-size: 100%;
+    }
+    #frees{
+        margin: 0px auto;
+    }
+    #first-div ul li{
+        display: block;
+        margin-left: -40px;
+        padding-bottom: 15px;
+    }
+    #snd-div div{
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin: 0px;
+        padding: 0px;
+        top: 0px;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+    }
+    #div-img{
+        float: none;
+    }
+    #get-div{
+        margin-top : 100px;
+        padding-bottom: 200px;
+    }
+    #frees{
+        margin-top: 80px;
+        transition-duration: 0.5s; 
+    }
+    #frees:hover{
+        margin-top: 70px;
+        margin-bottom: 10px;
+    }
+    #recap{
+        background-size: 100% 100%;
+    }
+    #recap div{
+        display: block;
+        width: 100%;
+    }
+    #div-div1{
+        width: 100%;
+        background-size: 100%;
+    }
+}
